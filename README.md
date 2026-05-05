@@ -18,6 +18,53 @@
 
 ---
 
+## 这不是我们想象出来的需求
+
+以下痛点来自 Reddit（r/Airtable, r/Notion, r/nocode）和中文社区（V2EX, 知乎）的真实用户反馈。Airtable/Notion 与飞书多维表功能高度同构，痛点直接适用。
+
+### 痛点1：自动化条数限制，花钱也解决不了
+
+> *"I just hit the wall with automation limit with our production system. Make or Zapier is a road through hell."*
+> — r/Airtable, 印刷厂管理系统用户（排班/仓库/工资/快递全在表里）
+
+> *"Going from $240/year to $8K+ just to get 50 more automations. I seriously don't understand."*
+> — r/Airtable, CRM用户，9 upvotes, 25 comments
+
+Airtable Team计划每个base限50条自动化。要更多？买Enterprise，$8K+/年，涨33倍。**Bitable Orchestrator 用AI驱动操作，不受原生自动化条数限制。**
+
+### 痛点2：出错了没有后悔药
+
+> *"I totally screwed up integrating 2 bases. Is there a way to revert back? Or is the lost data just that, lost?"*
+> — r/Airtable, 用户不小心覆盖了数千条关联数据
+
+> *"No native point-in-time data versioning. Users building fragile 3-table workarounds for basic temporal data."*
+> — r/Airtable, 金融团队为追踪周度变化被迫建3张辅助表手动做快照
+
+原生工具没有单条记录级别的撤销，只能恢复整个base快照。第三方备份工具（ProBackup, On2Air）因此形成了一个市场。**Bitable Orchestrator 每次操作前自动快照，失败自动回滚到操作前状态。**
+
+### 痛点3：级联自动化被禁止
+
+> *"After I spent the whole day making an automation that other automations require to be triggered, I searched it up and it says Notion intentionally has this limitation."*
+> — r/Notion, 5+ upvotes
+
+Notion为防无限循环，一刀切禁止自动化触发自动化。**Bitable Orchestrator 用依赖图+拓扑排序原生支持链式操作，同时内置循环保护。**
+
+### 痛点4：零代码和写代码之间没有中间地带
+
+> *"The solution for self-imposed limit is to take a tool marketed as no-code and write code. Airtable is losing its way."*
+> — r/Airtable, 6 upvotes
+
+> *"Non-technical teammates are starting to feel overwhelmed. What started as easy-to-adopt is turning into something that needs onboarding and training."*
+> — r/Airtable, 团队10人
+
+**自然语言就是中间地带。** 不用学代码，也不受零代码工具的限制。
+
+### 痛点5：谁改了什么数据，无从得知
+
+没有变更审计追踪是整个 no-code 数据库赛道的共同缺陷。**Bitable Orchestrator 记录每次操作的完整审计链：谁/什么时候/对什么数据/做了什么变更。**
+
+---
+
 ## 特性
 
 ### 五阶段安全执行管线
