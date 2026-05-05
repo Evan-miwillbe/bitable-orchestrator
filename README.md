@@ -1,4 +1,12 @@
-# Bitable Orchestrator / 飞书多维表智能编排器
+# Bitable Orchestrator 飞书多维表智能编排
+
+> **核心价值**：用自然语言驱动飞书多维表的跨表级联操作——条件分支、批量处理、事务回滚，一句话搞定。
+>
+> **关键创新**：5阶段安全管线（意图解析→执行规划→Dry-Run预演→原子执行→审计学习），在修改数据之前你能看到每一步会发生什么。
+>
+> **技术栈**：Claude Code + 飞书 CLI (lark-base / lark-im / lark-task / lark-doc) | MIT License
+
+---
 
 > 用说话的方式，指挥飞书多维表干复杂的活。
 
@@ -292,3 +300,11 @@ Claude Code 会：
 ## License
 
 MIT
+
+---
+
+## 致谢
+
+本项目参加 [飞书 CLI 创作者大赛](https://bytedance.larkoffice.com/docx/HWgKdWfeSoDw36xu7EYctBrUnsg)，感谢飞书团队和 Way to AGI 社区。
+
+Built with [Claude Code](https://claude.ai/claude-code) + [飞书 CLI](https://github.com/nicepkg/feishu-cli)
