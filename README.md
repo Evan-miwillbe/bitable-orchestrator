@@ -61,7 +61,7 @@
 
 ```bash
 # 克隆到 Claude Code skills 目录
-git clone https://github.com/anthropics/bitable-orchestrator.git ~/.claude/skills/bitable-orchestrator
+git clone https://github.com/Evan-miwillbe/bitable-orchestrator.git ~/.claude/skills/bitable-orchestrator
 ```
 
 ### 使用
