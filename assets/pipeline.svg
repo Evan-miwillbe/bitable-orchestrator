@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="phase1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="phase2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="phase3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="phase4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="phase5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#1e293b">五阶段安全执行管线</text>
+
+  <!-- Phase 1: Intent Parse -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="60" width="150" height="100" rx="10" fill="url(#phase1)"/>
+    <text x="105" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Phase 1</text>
+    <text x="105" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">意图解析</text>
+    <text x="105" y="135" text-anchor="middle" font-size="11" fill="#dbeafe">读取表结构 / 数据采样</text>
+    <text x="105" y="150" text-anchor="middle" font-size="11" fill="#dbeafe">发现表间关联</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <path d="M180,110 L210,110" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 2: Plan -->
+  <g filter="url(#shadow)">
+    <rect x="210" y="60" width="150" height="100" rx="10" fill="url(#phase2)"/>
+    <text x="285" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Phase 2</text>
+    <text x="285" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">执行计划</text>
+    <text x="285" y="135" text-anchor="middle" font-size="11" fill="#ede9fe">分解原子操作</text>
+    <text x="285" y="150" text-anchor="middle" font-size="11" fill="#ede9fe">构建依赖图</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <path d="M360,110 L390,110" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Dry-Run -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="60" width="150" height="100" rx="10" fill="url(#phase3)"/>
+    <text x="465" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Phase 3</text>
+    <text x="465" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Dry-Run 验证</text>
+    <text x="465" y="135" text-anchor="middle" font-size="11" fill="#fef3c7">模拟执行 / 冲突检测</text>
+    <text x="465" y="150" text-anchor="middle" font-size="11" fill="#fef3c7">预测变更结果</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <path d="M540,110 L570,110" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 4: Execute -->
+  <g filter="url(#shadow)">
+    <rect x="570" y="60" width="150" height="100" rx="10" fill="url(#phase4)"/>
+    <text x="645" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Phase 4</text>
+    <text x="645" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">原子执行</text>
+    <text x="645" y="135" text-anchor="middle" font-size="11" fill="#d1fae5">快照 → 逐步执行</text>
+    <text x="645" y="150" text-anchor="middle" font-size="11" fill="#d1fae5">失败自动回滚</text>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <path d="M720,110 L750,110" stroke="#94a3b8" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 5: Audit -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="60" width="120" height="100" rx="10" fill="url(#phase5)"/>
+    <text x="810" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Phase 5</text>
+    <text x="810" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">审计学习</text>
+    <text x="810" y="135" text-anchor="middle" font-size="11" fill="#e0e7ff">操作日志</text>
+    <text x="810" y="150" text-anchor="middle" font-size="11" fill="#e0e7ff">模式提取</text>
+  </g>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- User confirm callout -->
+  <g>
+    <rect x="370" y="185" width="190" height="40" rx="20" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+    <text x="465" y="210" text-anchor="middle" font-size="12" font-weight="600" fill="#d97706">用户确认后才执行</text>
+    <path d="M465,175 L465,185" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Bottom: Safety layer -->
+  <g>
+    <rect x="30" y="245" width="840" height="55" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="450" y="268" text-anchor="middle" font-size="13" font-weight="600" fill="#475569">安全层</text>
+    <text x="150" y="288" text-anchor="middle" font-size="11" fill="#64748b">快照保护</text>
+    <text x="330" y="288" text-anchor="middle" font-size="11" fill="#64748b">自动回滚</text>
+    <text x="510" y="288" text-anchor="middle" font-size="11" fill="#64748b">API 限频</text>
+    <text x="690" y="288" text-anchor="middle" font-size="11" fill="#64748b">敏感字段脱敏</text>
+
+    <!-- Dividers -->
+    <line x1="240" y1="255" x2="240" y2="292" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="420" y1="255" x2="420" y2="292" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="600" y1="255" x2="600" y2="292" stroke="#e2e8f0" stroke-width="1"/>
+  </g>
+</svg>
