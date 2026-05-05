@@ -39,10 +39,10 @@
 ### 痛点1：自动化条数限制，花钱也解决不了
 
 > *"I just hit the wall with automation limit with our production system. Make or Zapier is a road through hell."*
-> — r/Airtable, 印刷厂管理系统用户（排班/仓库/工资/快递全在表里）
+> — [r/Airtable](https://www.reddit.com/r/Airtable/comments/1rarip1/automation_limits_why/), 生产管理系统用户（排班/仓库/工资/快递全在表里）
 
 > *"Going from $240/year to $8K+ just to get 50 more automations. I seriously don't understand."*
-> — r/Airtable, CRM用户, 9 upvotes, 25 comments
+> — [r/Airtable](https://www.reddit.com/r/Airtable/comments/1ky3jou/ridiculous_limit_on_automation_blocks_us/), CRM用户, 10 upvotes, 26 comments
 
 涨33倍，只为多50条自动化规则。这就像你开了一家小饭馆，电力公司说：炒菜可以，但每月只能开30次火。
 
@@ -51,7 +51,7 @@
 ### 痛点2：出错了没有后悔药
 
 > *"I totally screwed up integrating 2 bases. Is there a way to revert back? Or is the lost data just that, lost?"*
-> — r/Airtable, 用户不小心覆盖了数千条关联数据
+> — r/Airtable, 用户不小心覆盖了数千条关联数据（原帖已删除，内容被多个Airtable社区讨论转引）
 
 3个月的客户数据，5个人录入，每天2小时，总共900个工时。一个误操作，归零。原生工具没有单条记录级别的撤销——因为这个痛点，市面上出现了一批专门做备份的第三方工具（ProBackup, On2Air）。别人的痛苦，成了生意。
 
@@ -60,7 +60,7 @@
 ### 痛点3：级联自动化被一刀切禁止
 
 > *"After I spent the whole day making an automation that other automations require to be triggered, I searched it up and it says Notion intentionally has this limitation."*
-> — r/Notion, 5+ upvotes
+> — [r/Notion](https://www.reddit.com/r/Notion/comments/1s9tpkk/just_found_out_chain_automations_are_not_possible/), 3 upvotes
 
 花了一整天搭链式自动化（A触发B，B触发C），结果平台故意禁止了。为了防无限循环，一刀切全砍。就像怕顾客吃坏肚子，把厨房关了。
 
@@ -69,7 +69,7 @@
 ### 痛点4：零代码和写代码之间没有中间地带
 
 > *"The solution for self-imposed limit is to take a tool marketed as no-code and write code. Airtable is losing its way."*
-> — r/Airtable, 6 upvotes
+> — [r/Airtable 评论](https://www.reddit.com/r/Airtable/comments/1ky3jou/ridiculous_limit_on_automation_blocks_us/muv1axn/)
 
 一个号称零代码的工具，解决限制的方法是写代码。
 
@@ -88,6 +88,9 @@
 
 > "审批流程是飞书多维表格目前比较薄弱的环节，但却是B端产品较常需要使用到的功能。"
 > — [人人都是产品经理](https://www.woshipm.com/evaluating/6150755.html)
+
+> "触发条件与执行操作为一对一关系，若有多对一的情况设置起来较为繁琐。"
+> — [人人都是产品经理](https://www.woshipm.com/evaluating/5935411.html)
 
 V2EX 上活跃讨论 NocoDB、Teable、NocoBase 等开源替代方案——当用户开始研究"怎么自己搭一个"的时候，说明他们对现有产品有多绝望。
 
